@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/mu128.png</file>
+        <file>images/mu16.png</file>
+        <file>images/mu32.png</file>
+        <file>images/mu48.png</file>
+        <file>images/mu64.png</file>
+        <file>images/outline.png</file>
+        <file>images/close.png</file>
+        <file>images/outline_item.png</file>
+        <file>images/person.png</file>
+        <file>images/accomplishment.png</file>
+        <file>images/document.png</file>
+        <file>images/work-assignment.png</file>
+        <file>images/deliverable.png</file>
+        <file>images/criterion.png</file>
+        <file>images/task.png</file>
+        <file>images/event.png</file>
+        <file>images/milestone.png</file>
+        <file>images/mu.png</file>
+        <file>images/chain.png</file>
+        <file>images/pred.png</file>
+        <file>images/succ.png</file>
+        <file>images/equipment.png</file>
+        <file>images/role.png</file>
+        <file>images/orgunit.png</file>
+        <file>images/unitassig.png</file>
+        <file>images/eye.png</file>
+        <file>images/wheel.png</file>
+        <file>images/gear.png</file>
+        <file>images/pin.png</file>
+        <file>images/pdm-diagram.png</file>
+        <file>images/folder.png</file>
+        <file>images/calendar.png</file>
+        <file>images/calendar-day.png</file>
+        <file>images/lua-script.png</file>
+    </qresource>
+</RCC>
