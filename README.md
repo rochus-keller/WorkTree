@@ -24,7 +24,7 @@ http://software.rochus-keller.info/WorkTree_linux_x86.tar.gz
 
 This is a compressed single-file executable which was built using the source code from here. You can also build the executable yourself if you want (see below for instructions). Since it is a single executable, it can just be downloaded and unpacked. No installation is necessary. You therefore need no special privileges to run WorkTree on your machine. 
 
-Here is a demo file with some instructions on how to use WorkTree: http://software.rochus-keller.info/WorkTreeDemo.cldb
+Here is a demo file with some instructions on how to use WorkTree: http://software.rochus-keller.info/WorkTreeDemo.wtdb
 
 ## How to Build WorkTree
 
