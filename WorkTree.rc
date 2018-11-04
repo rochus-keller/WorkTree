@@ -59,8 +59,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 0,7,1,0
- PRODUCTVERSION 0,7,1,0
+ FILEVERSION 0,8,0,0
+ PRODUCTVERSION 0,8,0,0
  FILEFLAGSMASK 0x17L
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -78,12 +78,12 @@ BEGIN
             VALUE "Comments", "rochus.keller@gmail.com"
             VALUE "CompanyName", "Dr. Rochus Keller"
             VALUE "FileDescription", "WorkTree"
-            VALUE "FileVersion", "0, 7, 1, 0"
+            VALUE "FileVersion", "0,8,0,0"
             VALUE "InternalName", "WorkTree"
-            VALUE "LegalCopyright", "Copyright (C) 2005-2015"
+            VALUE "LegalCopyright", "Copyright (C) 2012-2018"
             VALUE "OriginalFilename", "WorkTree.exe"
             VALUE "ProductName", "WorkTree"
-            VALUE "ProductVersion", "0, 7, 1, 0"
+            VALUE "ProductVersion", "0,8,0,0"
         END
     END
     BLOCK "VarFileInfo"
@@ -105,4 +105,3 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
-
