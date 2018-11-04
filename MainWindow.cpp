@@ -134,7 +134,7 @@ MainWindow::MainWindow(Udb::Transaction * txn):d_txn(txn),d_pushBackLock(false),
 
 
     setCaption();
-    setWindowIcon( qApp->windowIcon() ); // Ist nötig, da ansonsten auf Linux das Fenster keine Ikone hat!
+    setWindowIcon( qApp->windowIcon() ); // Ist nÃ¶tig, da ansonsten auf Linux das Fenster keine Ikone hat!
 
     connect( d_tab, SIGNAL( currentChanged ( int  ) ), this, SLOT( onTabChanged( int ) ) );
     // zuletzt, das sonst d_ov nicht bereit
@@ -251,7 +251,7 @@ void MainWindow::openPdmDiagram(const Udb::Obj & doc, const Udb::Obj &select )
             c->focusOn( select );
         return;
     }
-    // Ansonsten öffne den Parent des Diagramms
+    // Ansonsten Ã¶ffne den Parent des Diagramms
     QApplication::setOverrideCursor( Qt::WaitCursor );
 
 	PdmCtrl* ctrl = PdmCtrl::create( d_tab, doc );
@@ -794,6 +794,14 @@ void MainWindow::onFollowObject(const Udb::Obj & o)
     {
         openPdmDiagram( o );
         d_fldr->showObject( o );
+    }else if( o.getType() == TypeOutlineItem )
+    {
+		Udb::Obj home = o.getValueAsObj( AttrItemHome );
+		if( home.getType() == TypeOutline )
+			openOutline( home, o );
+		else
+			onFollowObject( home );
+		d_tv->setObj( o );
     }else if( o.getType() == TypeOutline )
     {
         openOutline( o );
