@@ -155,13 +155,14 @@ void TextViewCtrl::onTitleClick()
 
 void TextViewCtrl::setObj(const Udb::Obj & o)
 {
-    if( d_pin->isChecked() )
-        return;
-	Udb::Obj obj;
-	if( o.getType() != Oln::Outline::TID )
-		obj = o;
+    	if( d_pin->isChecked() )
+        	return;
+	Udb::Obj obj = o;
 	if( obj.getType() == Oln::OutlineItem::TID )
 		obj = obj.getValueAsObj( Oln::OutlineItem::AttrHome );
+	if( obj.getType() == Oln::Outline::TID )
+		obj = Udb::Obj();
+
 	if( !d_oln->getOutline().equals(obj) )
 	{
         d_oln->setOutline( obj );
