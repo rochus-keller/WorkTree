@@ -26,7 +26,6 @@ This is a compressed single-file executable which was built using the source cod
 
 Here is a demo file with some instructions on how to use WorkTree: http://software.rochus-keller.info/WorkTreeDemo.cldb
 
-
 ## How to Build WorkTree
 
 ### Preconditions
@@ -64,8 +63,6 @@ Follow these steps if you inted to build WorkTree yourself (don't forget to meet
 13. Run make; after a couple of minutes you will find the executable in the tmp subdirectory.
 
 Alternatively you can open WorkTree.pro using QtCreator and build it there.
-
-This procedure builds plain WorkTree without Lua and CLucene support which is sufficient for most use cases. 
 
 ## Support
 If you need support or would like to post issues or feature requests please use the Github issue list at https://github.com/rochus-keller/WorkTree/issues or send an email to the author.
