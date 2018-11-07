@@ -78,7 +78,7 @@ TextViewCtrl *TextViewCtrl::create(QWidget *parent, Udb::Transaction *txn)
     connect( ctrl->d_title, SIGNAL(signalClicked()), ctrl, SLOT(onTitleClick()) );
     connect( ctrl->d_oln->getTree(), SIGNAL( identDoubleClicked() ), ctrl, SLOT( onFollowAlias() ) );
     connect( ctrl->d_oln->getDeleg()->getEditCtrl(), SIGNAL( anchorActivated( QByteArray, bool ) ),
-		ctrl, SLOT( onAnchorActivated(QByteArray, bool) ) );
+		ctrl, SLOT( onAnchorActivated(QByteArray, bool) ), Qt::QueuedConnection ); // avoid change of Tree during Signal
 	connect( ctrl->d_oln, SIGNAL(sigCurrentChanged(quint64)), ctrl, SLOT( onCurrentChanged( quint64 ) ) );
 
     return ctrl;
